@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+date=$(date "+%Y-%m-%d")
+push(){
+    git init
+    git add --all
+    git commit -m "$date"
+    git push
+}
+
+push
